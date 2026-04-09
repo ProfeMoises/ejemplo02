@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Gestión de Stock</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gestión de Stock</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html" class="activo">Productos</a></li>
+                <li><a href="ventas.html">Ventas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Migas de pan: Indica dónde está el usuario sin que tenga que pensar [1, 2] -->
+        <nav class="breadcrumbs">
+            <p>Inicio > <strong>Productos</strong></p>
+        </nav>
+
+        <section id="gestion-productos">
+            <h2>Agregar Nuevo Producto</h2>
+            <p>Ingrese los detalles para actualizar el inventario.</p>
+
+            <form class="formulario-estilizado">
+                <div class="campo">
+                    <label for="nombre">Nombre del Producto:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Cuaderno Rivadavia">
+                </div>
+                <div class="campo">
+                    <label for="rubro">Rubro:</label>
+                    <select id="rubro" name="rubro">
+                        <option value="libreria">Librería</option>
+                        <option value="kiosco">Kiosco</option>
+                        <option value="regaleria">Regalería</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="precio">Precio ($):</label>
+                    <input type="number" id="precio" name="precio">
+                </div>
+                <div class="campo">
+                    <label for="stock">Stock Inicial:</label>
+                    <input type="number" id="stock" name="stock">
+                </div>
+                <button type="button" title="Guardar cambios en el inventario">Guardar Producto</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Comercio Multirubro - <a href="mailto:soporte@comercio.com">Soporte Técnico</a></p>
+    </footer>
+</body>
+</html>
