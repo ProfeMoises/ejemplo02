@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Gestión de Stock</title> <!-- Título descriptivo [9] -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gestión de Stock</h1> <!-- Jerarquía clara [7, 9] -->
+        <nav>
+            <ul>
+                <li><a href="index.html" class="activo">Inicio</a></li> <!-- Indicador "Usted está aquí" [10, 11] -->
+                <li><a href="productos.html">Productos</a></li> <!-- Nombres convencionales [6, 12] -->
+                <li><a href="ventas.html">Ventas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Resumen de Stock</h2>
+            <p>Productos con bajo stock que requieren reposición inmediata.</p> <!-- Sin palabras innecesarias [3, 13] -->
+            
+            <table class="tabla-stock">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Stock Actual</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cuaderno A4</td>
+                        <td>$2500</td>
+                        <td class="alerta">2 unidades</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Comercio Multirubro - <a href="mailto:soporte@comercio.com">Soporte Técnico</a></p>
+    </footer>
+</body>
+</html>
