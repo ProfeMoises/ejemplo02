@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas - Gestión de Stock</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gestión de Stock</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="ventas.html" class="activo">Ventas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <nav class="breadcrumbs">
+            <p>Inicio > <strong>Ventas</strong></p>
+        </nav>
+
+        <section>
+            <h2>Registro de Transacciones</h2>
+            <table class="tabla-stock">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-05-12</td>
+                        <td>Lapicera Azul</td>
+                        <td>10</td>
+                        <td>$5.000,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="pagos-cuenta">
+            <h2>Pagos a Cuenta</h2>
+            <p>Listado de clientes con saldo pendiente.</p>
+            <!-- Uso de lista para claridad visual [3] -->
+            <ul class="lista-ficticia">
+                <li><strong>Juan Pérez:</strong> Debe $200.00 (Vence: 15/06)</li>
+                <li><strong>Ana Gómez:</strong> Debe $1.500.00 (Vence: 20/06)</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Comercio Multirubro - <a href="mailto:soporte@comercio.com">Soporte Técnico</a></p>
+    </footer>
+</body>
+</html>
